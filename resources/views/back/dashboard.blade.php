@@ -4,12 +4,12 @@
 	<div class="page-inner py-5">
 		<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 			<div>
-				<h2 class="text-white pb-2 fw-bold">Dashboard</h2>
-				<h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5>
+				<h2 class="text-white pb-2 fw-bold">Halaman Admin</h2>
+				<h5 class="text-white op-7 mb-2">Suka suka suka</h5>
 			</div>
 			<div class="ml-md-auto py-2 py-md-0">
 				{{-- <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-				<a href="#" class="btn btn-secondary btn-round">Add Customer</a> --}}
+				<a href="#" class="btn btn-secondary btn-round">Add Cu`stomer</a> --}}
 			</div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
-								<p class="card-category">Article</p>
+								<p class="card-category">Prestasi</p>
 								<h4 class="card-title">70</h4>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Materi Video</div>
+						<div class="card-title">Prestasi Siswa</div>
 					</div>
 				</div>
 				<div class="card-body">
@@ -112,7 +112,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Playlist Video</div>
+						<div class="card-title">Prestasi Siswa</div>
 					</div>
 				</div>
 				<div class="card-body">
@@ -125,7 +125,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Draft Artikel</div>
+						<div class="card-title">Prestasi Siswa</div>
 					</div>
 				</div>
 				<div class="card-body">
@@ -140,7 +140,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Artikel Terpopuler</div>
+						<div class="card-title">Prestasi Populer</div>
 					</div>
 				</div>
 				<div class="card-body">
