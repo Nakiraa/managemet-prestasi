@@ -65,6 +65,12 @@
                     <h4 class="text-section">Components</h4>
                 </li>
                 <li class="nav-item">
+                    <a href="">
+                        <i class="fas fa-desktop"></i>
+                        <p>Kategori</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
