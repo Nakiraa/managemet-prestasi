@@ -65,7 +65,7 @@
                     <h4 class="text-section">Components</h4>
                 </li>
                 <li class="nav-item">
-                    <a href="">
+                    <a href="{{ route('kategori.index') }}">
                         <i class="fas fa-desktop"></i>
                         <p>Kategori</p>
                     </a>
