@@ -70,22 +70,37 @@
                         <p>Kategori</p>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('artikel.index') }}">
+                        <i class="fas fa-desktop"></i>
+                        <p>Artikel</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('playlist.index') }}">
+                        <i class="fas fa-video"></i>
+                        <p>Playlist video</p>
+                    </a>
+                </li>
+
                 <li class="nav-item">
                     <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                                     <i class="fas fa-undo"></i>
-                                        {{ __('Logout') }}
-                                    </a>
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    <i class="fas fa-undo"></i>
+                    {{ __('Logout') }}
+                </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                </li>
-                <li class="mx-4 mt-2">
-                    <a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
-                </li>
-            </ul>
-        </div>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
+            <li class="mx-4 mt-2">
+                <a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
+            </li>
+        </ul>
     </div>
+</div>
 </div>
