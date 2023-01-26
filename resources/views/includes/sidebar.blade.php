@@ -84,6 +84,12 @@
                         <p>Playlist video</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('materi.index') }}">
+                        <i class="fas fa-video"></i>
+                        <p>Materi Video</p>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a href="{{ route('logout') }}"
