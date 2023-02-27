@@ -17,7 +17,8 @@ class Materi extends Model
 
     protected $hidden = [];
 
-    public function playlist(){
-        return $this->belongsTo(playlist::class,'playlist_id',);
+    public function playlist()
+    {
+        return $this->belongsTo(Playlist::class,'playlist_id','id');
     }
 }

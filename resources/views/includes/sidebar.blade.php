@@ -86,7 +86,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('materi.index') }}">
-                        <i class="fas fa-video"></i>
+                        <i class="fas fa-film"></i>
                         <p>Materi Video</p>
                     </a>
                 </li>
