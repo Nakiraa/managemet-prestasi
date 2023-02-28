@@ -90,6 +90,18 @@
                         <p>Materi Video</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('slide.index') }}">
+                        <i class="fas fa-play"></i>
+                        <p>Slide Banner</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('iklan.index') }}">
+                        <i class="fas fa-play"></i>
+                        <p>Iklan</p>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a href="{{ route('logout') }}"
@@ -102,9 +114,6 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
                 </form>
-            </li>
-            <li class="mx-4 mt-2">
-                <a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
             </li>
         </ul>
     </div>

@@ -91,13 +91,15 @@ class MateriController extends Controller
             'judul_materi' => 'required|min:4',
         ]);
 
-        if (!empty($request->file('gambar_materi'))){
+        if (!empty($request->file('gambar_prestasi'))){
 
         $data = $request->all();
         $data['slug'] = Str::slug($request->judul_materi);
-        $data['gambar_materi'] = $request->file('gambar_materi')->store('materi');
+        $data['gambar_prestasi'] = $request->file('gambar_prestasi')->store('materi');
 
         $materi = Materi::findOrFail($id);
+        Storage::delete($materi->gambar_prestasi);
+
         $materi->update($data);
         return redirect()->route('materi.index')->with('success','  Berhasil Upload Materi ');
 
@@ -122,6 +124,11 @@ class MateriController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $materi = Materi::find($id);
+
+        Storage::delete($materi->gambar_prestasi);
+        $materi->delete();
+ 
+        return redirect()->route('materi.index')->with('success', 'materi berhasil dihapus');
     }
 }

@@ -67,10 +67,10 @@
 
             <div class="form-group">
                 <label for="Dokumentasi">Dokumentesi</label>
-                <input type="file" name="gambar_materi" class="form-control">
+                <input type="file" name="gambar_prestasi" class="form-control">
                 <br>
                 <label for="Dokumentasi">gambar saat ini</label><br>
-                <img src="{{ asset('uploads/' . $materi->gambar_materi) }}" width="100">
+                <img src="{{ asset('uploads/' . $materi->gambar_prestasi) }}" width="100">
             </div>
 
             <div class="form-group">
