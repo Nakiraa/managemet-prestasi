@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PlaylistController;
 use App\Http\Controllers\SlideController;
@@ -20,9 +21,11 @@ use App\Http\Controllers\IklanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [FrontendController::class, 'index']);
 
 Auth::routes();
 
