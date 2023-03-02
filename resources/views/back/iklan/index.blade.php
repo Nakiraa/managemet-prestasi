@@ -20,7 +20,7 @@
         <div class="card-header">
            <div class="card-head-row">
               <div class="card-title">Daftar Iklan </div>
-              <!-- <a href="{{ route('slide.create') }}" class="btn btn-primary btn-sm ml-auto" > <i class="fa-solid fa-plus"></i>Tambah Slide</a> -->
+              <a href="{{ route('iklan.create') }}" class="btn btn-primary btn-sm ml-auto" > <i class="fa-solid fa-plus"></i>Tambah Iklan</a>
           </div>
       </div>
       <div class="card-body">
@@ -59,13 +59,13 @@
                         </td>
                         <td>
                             <a href="{{ route('iklan.edit', $row->id) }}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pencil"></i></a>
-                            <!-- <form action="{{ route('slide.destroy', $row->id) }}" method="post" class="d-inline">
+                            <form action="{{ route('iklan.destroy', $row->id) }}" method="post" class="d-inline">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn-danger btn-sm">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
-                            </form> -->
+                            </form>
                         </td>
                     </tr>
                     @empty

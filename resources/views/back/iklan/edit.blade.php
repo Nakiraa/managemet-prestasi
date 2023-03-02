@@ -19,7 +19,7 @@
      <div class="card full-height">
         <div class="card-header">
            <div class="card-head-row">
-              <div class="card-title">Edit Iklan {{$iklan->judul}} </div>
+              <div class="card-title">Edit Iklan "{{$iklan->judul}}" </div>
               <a href="{{ route('iklan.index') }}" class="btn btn-warning btn-sm ml-auto"><i class="fa-solid fa-rotate-left"></i>Back</a>
           </div>
       </div>
@@ -39,8 +39,8 @@
             </div>
 
             <div class="form-group">
-                <label for="status">Status</label>
-                <select name="status" class="form-control">
+                <label for="Status">Status</label>
+                <select name="is_active" class="form-control">
                     <option value="1" {{ $iklan-> status == '1' ? 'selected' : ''}}>
                         Publish
                     </option>
