@@ -20,4 +20,16 @@ class FrontendController extends Controller
             'slide' => $slide
         ]);
     }
+
+    public function detail($slug)
+    {
+        $category = Kategori::all();
+
+        $artikel = Artikel::where('slug', $slug)->first();
+
+        return view('front.artikel.detail-artikel', [
+            'artikel' => $artikel,
+            'category' => $category
+        ]);
+    }
 }

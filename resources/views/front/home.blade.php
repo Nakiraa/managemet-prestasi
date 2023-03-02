@@ -1,6 +1,7 @@
 @extends('front.layouts.frontend')
 
 @section('content')
+@extends('front.includes.slide')
     
 <div class="row">
     @forelse ($artikel as $row)
@@ -8,7 +9,11 @@
        <div class="card">
            <img src="{{ asset('uploads/' . $row->gambar_artikel) }}" class="card-img-top" alt="...">
            <div class="card-body">
-             <h5 class="card-title">{{ $row->judul }}</h5>
+             <h5 class="card-title">
+              <a href="{{ route('detail-artikel', $row->slug) }}" style="text-decoration: none;">
+              {{ $row->judul }}
+              </a>
+            </h5>
              <p class="card-text">{!! $row->body !!}</p>
            </div>
            <!-- <ul class="list-group list-group-flush">
