@@ -1,7 +1,7 @@
 @extends('front.layouts.frontend')
 
 @section('content')
-@extends('front.includes.slide')
+
     
 <div class="row">
     @forelse ($artikel as $row)
