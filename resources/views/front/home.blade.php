@@ -1,4 +1,6 @@
 @extends('front.layouts.frontend')
+@include('front.includes.slide')
+
 
 @section('content')
 
