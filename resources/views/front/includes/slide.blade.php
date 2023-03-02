@@ -1,15 +1,11 @@
 <div class="container">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{ asset('uploads/peakpx1.jpg') }}" class="d-block w-100" alt="...">
+          @foreach ($slide as $key => $row)
+          <div class="carousel-item {{ $key == 0 ? 'active' : ''}}">
+            <img src="{{ asset('uploads/' . $row->gambar_slide) }}" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-            <img src="{{ asset('uploads/peakpx.jpg') }}" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="{{ asset('uploads/peakpx1.jpg') }}" class="d-block w-100" alt="...">
-          </div>
+          @endforeach
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
