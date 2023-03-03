@@ -46,8 +46,10 @@
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
-								<p class="card-category">Prestasi</p>
-								<h4 class="card-title">70</h4>
+								<p class="card-category"><a href="{{ route('artikel.index') }}" style="color:gray">Prestasi </a></p>
+								<h4 class="card-title">
+									{{ $count }}
+								</h4>
 							</div>
 						</div>
 					</div>
@@ -65,8 +67,10 @@
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
-								<p class="card-category">Kategori</p>
-								<h4 class="card-title">80</h4>
+								<p class="card-category"><a href="{{ route('kategori.index') }}" style="color:gray">Kategori </a></p>
+								<h4 class="card-title">
+									{{ $countk }}
+								</h4>
 							</div>
 						</div>
 					</div>
@@ -80,13 +84,14 @@
 						<div class="col-icon">
 							<div class="icon-big text-center icon-secondary bubble-shadow-small">
 								<i class="fas fa-file-video"></i>
-
 							</div>
 						</div>
 						<div class="col col-stats ml-3 ml-sm-0">
 							<div class="numbers">
-								<p class="card-category">Vidoe</p>
-								<h4 class="card-title">90</h4>
+								<p class="card-category"><a href="{{ route('materi.index') }}" style="color:gray">Video </a></p>
+								<h4 class="card-title">
+								{{ $countm }}	
+								</h4>
 							</div>
 						</div>
 					</div>

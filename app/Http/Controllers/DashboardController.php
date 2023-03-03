@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Artikel;
+use App\Models\Kategori;
+use App\Models\Materi;
 
 class DashboardController extends Controller
 {
@@ -13,7 +16,13 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('back.dashboard');
+        // $artikel = Artikel::all();
+        $count = Artikel::count();
+        $countk = Kategori::count();
+        $countm = Materi::count();
+
+        return view('back.dashboard',compact('count','countk','countm'));
+        
     }
 
     /**
